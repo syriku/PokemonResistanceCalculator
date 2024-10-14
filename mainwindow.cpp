@@ -20,16 +20,29 @@ void MainWindow::ToGetResistance(Pokemon::PokemonType arg)
     if(names.begin() == names.end())
     {
         ui->lb_type->setText("属性：空");
-        return;
     }
-    QString types = "属性：";
-    for(auto &i: names)
+    else
     {
-        types += i.c_str();
-        types += "+";
+        QString types = "属性：";
+        for(auto &i: names)
+        {
+            types += i.c_str();
+            types += "+";
+        }
+        types = types.removeLast();
+        ui->lb_type->setText(types);
     }
-    types = types.removeLast();
-    ui->lb_type->setText(types);
+    auto resistance = pokemon.GetResistance();
+    std::vector<QTableWidgetItem*> resistance_item;
+    for(const auto& s: resistance)
+    {
+        resistance_item.push_back(new QTableWidgetItem(s.c_str()));
+    }
+    for(int i=0;i<3;i++)
+    {
+        ui->t_resistance->setItem(i,0, resistance_item[i]);
+    }
+    ui->t_resistance->resizeColumnsToContents();
 }
 
 void MainWindow::on_cb_Water_checkStateChanged(const Qt::CheckState &arg1)

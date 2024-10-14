@@ -185,7 +185,7 @@
      <string>选择被动方的宝可梦属性</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="t_resistance">
     <property name="geometry">
      <rect>
       <x>440</x>

@@ -14,6 +14,7 @@ public:
     // void RemoveType(PokemonType);
     void ChangeType(PokemonType);
     std::vector<std::string> PrintTypes();
+    std::vector<std::string> GetResistance();
 private:
     PokemonData database;
 };
