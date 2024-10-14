@@ -5,6 +5,7 @@
 #include <QTableWidgetItem>
 #include <QCheckBox>
 #include "pokemonstate.h"
+#include "licensewindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -59,6 +60,8 @@ private slots:
 
     void on_b_Clear_clicked();
 
+    void on_actionLicense_triggered();
+
 private:
     Ui::MainWindow *ui;
     void ToGetResistance(Pokemon::PokemonType,bool);
@@ -66,5 +69,6 @@ private:
     std::vector<QCheckBox*> cb;
     void CheckableCheck();
     bool stateChangedProcess = true;
+    LicenseWindow dialog;
 };
 #endif // MAINWINDOW_H

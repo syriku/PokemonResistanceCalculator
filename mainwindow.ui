@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>266</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -251,8 +251,20 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="actionLicense"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLicense">
+   <property name="text">
+    <string>许可证</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

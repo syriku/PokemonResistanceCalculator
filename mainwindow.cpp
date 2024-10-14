@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -225,5 +226,11 @@ void MainWindow::on_cb_Ghost_checkStateChanged(const Qt::CheckState &arg1)
 void MainWindow::on_b_Clear_clicked()
 {
     ToGetResistance(Pokemon::Normal, true);
+}
+
+
+void MainWindow::on_actionLicense_triggered()
+{
+    dialog.show();
 }
 
