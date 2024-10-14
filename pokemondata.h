@@ -33,25 +33,25 @@ class PokemonData
 {
 private:
     // 手动创建映射
-    const std::map<PokemonType, std::string> TypeNames = {
-        {Steel,       "Steel"},
-        {Normal,     "Normal"},
-        {Fire,       "Fire"},
-        {Water,      "Water"},
-        {Electric,   "Electric"},
-        {Grass,      "Grass"},
-        {Ice,        "Ice"},
-        {Fighting,   "Fighting"},
-        {Poison,     "Poison"},
-        {Ground,     "Ground"},
-        {Flying,     "Flying"},
-        {Psychic,    "Psychic"},
-        {Bug,        "Bug"},
-        {Rock,       "Rock"},
-        {Ghost,      "Ghost"},
-        {Dragon,     "Dragon"},
-        {Dark,       "Dark"},
-        {Fairy,      "Fairy"}
+    const std::map<PokemonType, std::string> TypeNames = {  
+        {Steel,       "钢"},  
+        {Normal,     "一般"},  
+        {Fire,       "火"},  
+        {Water,      "水"},  
+        {Electric,   "电"},  
+        {Grass,      "草"},  
+        {Ice,        "冰"},  
+        {Fighting,   "格斗"},  
+        {Poison,     "毒"},  
+        {Ground,     "地面"},  
+        {Flying,     "飞行"},  
+        {Psychic,    "超能力"},  
+        {Bug,        "虫"},  
+        {Rock,       "岩石"},  
+        {Ghost,      "幽灵"},  
+        {Dragon,     "龙"},  
+        {Dark,       "恶"},  
+        {Fairy,      "妖精"}  
     };
     // {被攻击属性： {弱点，抵抗，无效}
     const std::map<PokemonType, std::vector<std::set<PokemonType>>> TypeChart = {
