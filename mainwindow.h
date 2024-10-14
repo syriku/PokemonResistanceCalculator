@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTableWidgetItem>
+#include <QCheckBox>
 #include "pokemonstate.h"
 
 QT_BEGIN_NAMESPACE
@@ -56,9 +57,14 @@ private slots:
 
     void on_cb_Ghost_checkStateChanged(const Qt::CheckState &arg1);
 
+    void on_b_Clear_clicked();
+
 private:
     Ui::MainWindow *ui;
-    void ToGetResistance(Pokemon::PokemonType);
+    void ToGetResistance(Pokemon::PokemonType,bool);
     Pokemon::PokemonState pokemon;
+    std::vector<QCheckBox*> cb;
+    void CheckableCheck();
+    bool stateChangedProcess = true;
 };
 #endif // MAINWINDOW_H

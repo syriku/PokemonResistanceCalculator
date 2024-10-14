@@ -228,6 +228,19 @@
      <string>属性：空</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="b_Clear">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空选择</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

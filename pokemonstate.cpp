@@ -12,6 +12,10 @@ void PokemonState::ChangeType(PokemonType arg)
         types.insert(arg);
     }
 }
+void PokemonState::ClearType()
+{
+    types.clear();
+}
 std::vector<std::string> PokemonState::PrintTypes()
 {
     std::vector<std::string> str;

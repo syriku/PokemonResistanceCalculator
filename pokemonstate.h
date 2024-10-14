@@ -13,6 +13,7 @@ public:
     // void AddType(PokemonType);
     // void RemoveType(PokemonType);
     void ChangeType(PokemonType);
+    void ClearType();
     std::vector<std::string> PrintTypes();
     std::vector<std::string> GetResistance();
 private:
