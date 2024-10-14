@@ -12,4 +12,13 @@ void PokemonState::ChangeType(PokemonType arg)
         types.insert(arg);
     }
 }
+std::vector<std::string> PokemonState::PrintTypes()
+{
+    std::vector<std::string> str;
+    for(const auto& i: types)
+    {
+        str.push_back(database.GetType(i));
+    }
+    return str;
+}
 }

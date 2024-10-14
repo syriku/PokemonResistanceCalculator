@@ -4,6 +4,7 @@
 #include<string>
 #include<vector>
 #include<set>
+#include<Qt>
 #define TYPE_CHART_UNIT std::vector<std::set<PokemonType>>
 namespace Pokemon{
 enum PokemonType {
@@ -32,7 +33,7 @@ class PokemonData
 {
 private:
     // 手动创建映射
-    const std::map<PokemonType, std::string> pokemonTypeNames = {
+    const std::map<PokemonType, std::string> TypeNames = {
         {Steel,       "Steel"},
         {Normal,     "Normal"},
         {Fire,       "Fire"},
@@ -77,6 +78,7 @@ public:
     PokemonData();
     TYPE_CHART_UNIT GetChart(PokemonType);
     TYPE_CHART_UNIT CrossChart(PokemonType, PokemonType);
+    std::string GetType(PokemonType);
 };
 }
 #endif // POKEMONDATA_H

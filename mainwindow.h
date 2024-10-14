@@ -21,6 +21,40 @@ public:
 private slots:
     void on_cb_Water_checkStateChanged(const Qt::CheckState &arg1);
 
+    void on_cb_Fire_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Grass_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Electric_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Dragon_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Ice_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Psychic_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Dark_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Bug_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Flying_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Rock_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Ground_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Fighting_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Poison_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Fairy_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Steel_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Normal_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_cb_Ghost_checkStateChanged(const Qt::CheckState &arg1);
+
 private:
     Ui::MainWindow *ui;
     void ToGetResistance(Pokemon::PokemonType);
