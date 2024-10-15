@@ -30,6 +30,7 @@ namespace Pokemon{
         int attack;
         int power;
         float factor;
+        int Damage();
     };
 }
 #endif // POKEMONDAMAGE_H

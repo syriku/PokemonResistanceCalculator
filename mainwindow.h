@@ -72,7 +72,7 @@ private:
     std::vector<QCheckBox*> cb;
     void CheckableCheck();
     bool stateChangedProcess = true;
-    LicenseWindow dialog;
+    LicenseWindow* dialog;
     DamageWindow* calculator;
 };
 #endif // MAINWINDOW_H

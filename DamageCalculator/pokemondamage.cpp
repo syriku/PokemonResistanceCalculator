@@ -1,5 +1,5 @@
 #include "pokemondamage.h"
-
+#include <iostream>
 
 void Pokemon::PokemonStat::CalculateStat()
 {
@@ -17,11 +17,21 @@ void Pokemon::PokemonStat::CalculateStat()
 }
 
 Pokemon::PokemonDamage::PokemonDamage():
-    hp(PokemonStat{100, 100, 31, 0, 1.0, true, 0})
-    ,def(PokemonStat{100, 100, 31, 0, 1.0, false, 0})
+    hp(PokemonStat{100, 100, 31, 0, 1.0, true, 341})
+    ,def(PokemonStat{100, 100, 31, 0, 1.0, false, 236})
     ,level(100)
     ,attack(246)
     ,power(90)
-    ,factor(1.0)
+    ,factor(1.5)
 {
+}
+
+int Pokemon::PokemonDamage::Damage()
+{
+    float temp1 = (2 * float(level) + 10)/250;
+    float temp2 = temp1 * float(attack) / float(def.value) * float(power) + 2;
+    int maxDamage = temp2 * factor;
+    // debug
+    std::cout<< maxDamage << std::endl;
+    return maxDamage;
 }

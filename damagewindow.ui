@@ -88,7 +88,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="spinBox_5">
+       <widget class="QSpinBox" name="sb_Power">
         <property name="maximum">
          <number>3000</number>
         </property>
@@ -122,7 +122,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QDoubleSpinBox" name="doubleSpinBox">
+       <widget class="QDoubleSpinBox" name="sb_Factor">
         <property name="singleStep">
          <double>0.250000000000000</double>
         </property>
@@ -137,9 +137,9 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>420</x>
       <y>90</y>
-      <width>481</width>
+      <width>501</width>
       <height>241</height>
      </rect>
     </property>
@@ -154,7 +154,7 @@
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>70</y>
        <width>481</width>
        <height>61</height>
@@ -209,6 +209,9 @@
         <property name="maximum">
          <number>1000</number>
         </property>
+        <property name="value">
+         <number>341</number>
+        </property>
        </widget>
       </item>
      </layout>
@@ -235,7 +238,7 @@
     <widget class="QWidget" name="horizontalLayoutWidget_6">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>130</y>
        <width>481</width>
        <height>61</height>
@@ -315,6 +318,9 @@
         <property name="maximum">
          <number>1000</number>
         </property>
+        <property name="value">
+         <number>236</number>
+        </property>
        </widget>
       </item>
      </layout>
@@ -358,7 +364,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="l_Damage">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -373,7 +379,25 @@
      </font>
     </property>
     <property name="text">
-     <string>答案</string>
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_Calculate">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>计算伤害</string>
     </property>
    </widget>
   </widget>

@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , calculator(new DamageWindow) 
+    , dialog(new LicenseWindow)
 {
     ui->setupUi(this);
     cb = {
@@ -33,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete calculator;
+    delete dialog;
     delete ui;
     
 }
@@ -234,7 +236,7 @@ void MainWindow::on_b_Clear_clicked()
 
 void MainWindow::on_actionLicense_triggered()
 {
-    dialog.show();
+    dialog->show();
 }
 
 
