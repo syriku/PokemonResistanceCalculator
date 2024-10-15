@@ -27,6 +27,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         pokemonstate.h pokemonstate.cpp
         license.ui
         licensewindow.h licensewindow.cpp
+        damagewindow.ui
+        damagewindow.h damagewindow.cpp
+        DamageCalculator/pokemondamage.h DamageCalculator/pokemondamage.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET PokemonCalculator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
