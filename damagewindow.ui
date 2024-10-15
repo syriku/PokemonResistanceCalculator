@@ -54,30 +54,23 @@
        </widget>
       </item>
       <item>
-       <widget class="QSlider" name="hs_Attack">
-        <property name="orientation">
-         <enum>Qt::Orientation::Horizontal</enum>
+       <widget class="QSpinBox" name="sb_Attack">
+        <property name="maximum">
+         <number>13000</number>
+        </property>
+        <property name="value">
+         <number>246</number>
         </property>
        </widget>
       </item>
      </layout>
-    </widget>
-    <widget class="QSpinBox" name="sb_Attack">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>50</y>
-       <width>51</width>
-       <height>22</height>
-      </rect>
-     </property>
     </widget>
     <widget class="QWidget" name="horizontalLayoutWidget_4">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>172</width>
+       <width>301</width>
        <height>41</height>
       </rect>
      </property>
@@ -95,7 +88,14 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="spinBox_5"/>
+       <widget class="QSpinBox" name="spinBox_5">
+        <property name="maximum">
+         <number>3000</number>
+        </property>
+        <property name="value">
+         <number>100</number>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -122,37 +122,16 @@
        </widget>
       </item>
       <item>
-       <widget class="QSlider" name="hs_Attack_2">
-        <property name="maximum">
-         <number>16</number>
-        </property>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox">
         <property name="singleStep">
-         <number>1</number>
+         <double>0.250000000000000</double>
         </property>
-        <property name="orientation">
-         <enum>Qt::Orientation::Horizontal</enum>
+        <property name="value">
+         <double>1.000000000000000</double>
         </property>
        </widget>
       </item>
      </layout>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>150</y>
-       <width>53</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>1</string>
-     </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
@@ -396,6 +375,24 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>370</y>
+      <width>241</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>答案</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
