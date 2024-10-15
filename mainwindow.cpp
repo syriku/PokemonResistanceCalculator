@@ -5,6 +5,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , calculator(new DamageWindow) 
 {
     ui->setupUi(this);
     cb = {
@@ -31,7 +32,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    delete calculator;
     delete ui;
+    
 }
 
 void MainWindow::ToGetResistance(Pokemon::PokemonType arg, bool toClear=false)
@@ -232,5 +235,11 @@ void MainWindow::on_b_Clear_clicked()
 void MainWindow::on_actionLicense_triggered()
 {
     dialog.show();
+}
+
+
+void MainWindow::on_actioncalculator_triggered()
+{
+    calculator->show();
 }
 

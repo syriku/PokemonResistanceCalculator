@@ -6,6 +6,7 @@
 #include <QCheckBox>
 #include "pokemonstate.h"
 #include "licensewindow.h"
+#include "damagewindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -62,6 +63,8 @@ private slots:
 
     void on_actionLicense_triggered();
 
+    void on_actioncalculator_triggered();
+
 private:
     Ui::MainWindow *ui;
     void ToGetResistance(Pokemon::PokemonType,bool);
@@ -70,5 +73,6 @@ private:
     void CheckableCheck();
     bool stateChangedProcess = true;
     LicenseWindow dialog;
+    DamageWindow* calculator;
 };
 #endif // MAINWINDOW_H

@@ -257,12 +257,24 @@
     </property>
     <addaction name="actionLicense"/>
    </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="actioncalculator"/>
+   </widget>
+   <addaction name="menu_2"/>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLicense">
    <property name="text">
     <string>许可证</string>
+   </property>
+  </action>
+  <action name="actioncalculator">
+   <property name="text">
+    <string>伤害计算</string>
    </property>
   </action>
  </widget>
